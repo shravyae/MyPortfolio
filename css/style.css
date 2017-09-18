@@ -136,19 +136,19 @@ h2.heading span{
   padding-right:10px;
   ;
 }
-.author #author_info {
+.author .author_info {
   text-align: left;
   text-transform: none;
   text-indent: 2em;
 }
-.author #author_info #author_name:hover {
+.author .author_info #author_name:hover {
   color: #2c3e50;
 }
-.author #author_connect {
+.author .author_connect {
   text-transform: none;
   text-align: center;
 }
-.author #author_connect .social-item {
+.author .author_connect .social-item {
   padding: 20px;
   display: inline;
 }
@@ -159,20 +159,18 @@ footer {
   background-color: #2D3C48;
   line-height: normal;
 }
-.container .footer_credits img {
-  width: 80px;
-  hight: 22px;
+footer .container img {
+  width: 12%;
+  height: 12%;
   border-radius: 2px;
-}
-.container .footer_credits #udacity_logo {
-  fill: #ecf0f1;
 }
 footer .container {
   text-align: center;
   font-size: 12px;
   font-weight: 300;
-  text-transform: uppercase;
   color: #ecf0f1;
+  text-transform: uppercase;
+
 }
 /* End of Footer styling */
 /*Media Queries*/
