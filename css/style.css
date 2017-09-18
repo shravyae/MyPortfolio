@@ -1,160 +1,201 @@
 html, body {
-    -webkit-font-smoothing: antialiased;
-  }
-  body {
-    background: #FFFFFF;
-    font: 13px/1.6 "Helvetica Neue", helvetica, verdana, arial, sans-serif;
-    color: #666;
-    margin: 0px;
-    overflow-y: scroll;
-    line-height: 21px;
-  }
-  img {
-    max-width: 100%;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 500;
-    line-height: 1.1;
-    margin-top: 0;
-    margin-bottom: .5rem;
-  }
-  /* Start styling for header area*/
-  header {
-      padding-top:10px;
-  }
-  header .container{
-    max-width:980px;
-    display: flex;
-    position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: -webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#ecf0f1));
+  font: 12px 'Roboto', sans-serif;
+  color: #666;
+  margin: 0px;
+  overflow-y: scroll;
+  line-height: 20px;
+}
+img {
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #627788;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: .4rem;
 }
 
-  header .line {
-    border-bottom: solid 4px #7d97ad;
-    width:100%;
-  }
-  header .leftCol {
-    width:40%;
-    float:left;
-  }
-  header .rightCol {
-    width:90%;
-    text-align: right;
-    float: right;
-  }
- 
-  header .rightCol .name{
-    padding-bottom:5px;
-    font-weight: lighter;
-    text-transform: uppercase;
-  }
-  header .rightCol .career{
-    font-size:15px;
-    font-weight: normal;
-    line-height: 21px;
-  }
-  header .avatar {
-    background: url("../img/shravyaE_avatar.png") no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    border-radius: 50%;
-    display: inline-block;
-    width:80px;
-    height:80px;
-  }
-  /* End styling for header area*/
-  h2.heading {
-    text-transform: uppercase;
-    margin: 1.75rem 0;
-    border-bottom: solid 1px #aaa;
-    line-height: 0px;
-    font-weight: normal;
-    color:#627788;
-  }
-  h2.heading span{
-    background: #FFFFFF;
-    padding-right:10px;
-  }
-  .container {
-    max-width:980px; 
-    margin:0 auto;
-    padding:10px 20px;
-    
-  }
-  /* Start stylying for portfolio items*/
-  #items {
-    display: flex; 
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    -webkit-flex-flow: row wrap;
-  }
+/* Start styling for header area*/
+header {
+  padding-top:20px;
+}
+header .container{
+  max-width:980px;
+  display: flex;
+  position: relative;
+}
+header .line {
+  border-bottom: solid 1px #7d97ad;
+  width:100%;
+}
+header .leftCol {
+  width:40%;
+  float:left;
+}
+header .rightCol {
+  width:90%;
+  text-align: right;
+  float: right;
+}
+header .rightCol .name{
+  padding-bottom:10px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+header .rightCol .designation{
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 20px;
+}
+header .logo {
+  background: url("../img/shravya_logo.png") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+/* End styling for header area*/
 
-  #items .portfolio-item,.portfolio-item .LI-profile-badg {
-    background: #fff;
-    width: 32%;
-    margin-bottom:2%;
-    text-align: left;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    flex-shrink: 0;
-    border-radius: 3px;
-  }
+/* Starting styling for main*/
+#cover  img{
+  border-radius: 3px;
+}
+h2.heading {
+  text-transform: uppercase;
+  margin: 1.75rem 0;
+  border-bottom: solid 1px #aaa;
+  line-height: 0px;
+  font-weight: normal;
+  color:#627788;
+}
+h2.heading span{
+  background: #f6f8f8;
+  padding-right:10px;
+}
+.container, .author{
+  max-width:980px;
+  margin: 0 auto;
+  padding:10px 20px;
+}
 
-  #items .portfolio-item .LI-profile-badg {
-    background: #fff;
-    width: 300px;
-    margin-bottom:2%;
-    text-align: left;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    flex-shrink: 0;
-    border-radius: 3px;
-  }
-  #items .portfolio-item img{
-    border-radius: 3px 3px 0 0;
-  }
+/*-- Portfolio Items --*/
+#items {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+}
+#items .portfolio-item {
+  background: #fff;
+  width: 32%;
+  margin-bottom:2%;
+  text-align: left;
+  box-shadow: 0 2px 0 #D9E1E7;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+#items .portfolio-item:hover {
+  transform: scale(1.1);
+}
+#items .portfolio-item img{
+  border-radius: 3px 3px 0 0;
+}
+#items .portfolio-item .text_block{
+  padding: 1.25rem;
+}
+#items .portfolio-item h3 {
+  font-size:18px;
+  color:#444;
+}
+#items .portfolio-item:nth-child(3n-1) {
+  margin-right:2%;
+  margin-left:2%;
+}
 
-  #items .portfolio-item .text_block{
-    padding: 1.25rem;
+/*-- Author Section --*/
+.author {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 30px 50px;
+}
+.author h2.heading span{
+  background: #ecf0f1;
+  padding-right:10px;
+  ;
+}
+.author #author_info {
+  text-align: left;
+  text-transform: none;
+  text-indent: 2em;
+}
+.author #author_info #author_name:hover {
+  color: #2c3e50;
+}
+.author #author_connect {
+  text-transform: none;
+  text-align: center;
+}
+.author #author_connect .social-item {
+  padding: 20px;
+  display: inline;
+}
+
+/* End stylying for portfolio items,author section and main*/
+/* Footer Styling starts here */
+footer {
+  background-color: #2D3C48;
+  line-height: normal;
+}
+.container .footer_credits img {
+  width: 80px;
+  hight: 22px;
+  border-radius: 2px;
+}
+.container .footer_credits #udacity_logo {
+  fill: #ecf0f1;
+}
+footer .container {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ecf0f1;
+}
+/* End of Footer styling */
+/*Media Queries*/
+/*For devices with width between 600px and 850px*/
+@media screen and (min-width: 600px) and (max-width: 850px)  {
+  #items .portfolio-item{
+    width:49%;
   }
-  #items .portfolio-item h3 {
-    font-size:18px;
-    color:#444;
-  }
-  #items .portfolio-item:nth-child(3n-1) {
+  #items .portfolio-item:nth-child(odd) {
     margin-right:2%;
-    margin-left:2%;
+    margin-left:0px;
   }
-  /* End stylying for portfolio items*/
-  footer {
-    max-width:980px;
-    margin:0 auto;
-    padding:10px 20px;
+  #items .portfolio-item:nth-child(even) {
+    margin-right:0px;
+    margin-left:0px;
   }
-  /*Media Queries*/
-  /*For devices with width between 600px and 850px*/
-  @media screen and (min-width: 600px) and (max-width: 850px)  {
-    #items .portfolio-item{
-      width:49%;
-    }
-    #items .portfolio-item:nth-child(odd) {
-      margin-right:2%;
-      margin-left:0px;
-    }
-    #items .portfolio-item:nth-child(even) {
-      margin-right:0px;
-      margin-left:0px;
-    }
+}
+/*For devices with width up to 600px*/
+@media screen and (max-width: 600px)  {
+  #items .portfolio-item{
+    width:99%;
+    margin-right:0!important;
+    margin-left:0!important;
+    margin-bottom:20px;
   }
-  /*For devices with width up to 600px*/    
-  @media screen and (max-width: 600px)  {
-    #items .portfolio-item{
-      width:99%;
-      margin-right:0!important;
-      margin-left:0!important;
-      margin-bottom:20px;
-    }
-  }
+}
